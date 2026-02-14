@@ -381,7 +381,7 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
         // Inicializa EmailJS con tu Public Key
-        emailjs.init("template_d623bdh");
+        emailjs.init("service_5wt7vnp");
 
         const form = document.getElementById("contactForm");
         const statusMessage = document.getElementById("statusMessage");
@@ -389,7 +389,7 @@
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            emailjs.sendForm("service_5wt7vnp", "TU_TEMPLATE_ID", this)
+            emailjs.sendForm("service_5wt7vnp", "template_d623bdh", this)
                 .then(function () {
                     statusMessage.textContent = "¡Mensaje enviado correctamente!";
                     statusMessage.style.color = "green";
